@@ -6,8 +6,8 @@ app.secret_key = 'development key'
 import secrets
 import requests
 # import urllib
-username = 'justro.hit'
-password = 'qwertyuiop123'
+username = 'use_your_own'
+password = 'use_your_own'
 
 from PIL import Image
 import PIL,os
@@ -98,5 +98,5 @@ def edit_meme(id):
 
 
 
-
-app.run(debug=False)
+if __name__ = '__main__':
+    app.run(debug=False)
