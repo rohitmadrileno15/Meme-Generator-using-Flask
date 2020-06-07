@@ -82,10 +82,13 @@ def edit_meme(id):
     print("POS")
     if (form.validate_on_submit()):
         text0 = form.data1.data
+        text0 = text0.strip()
         print(text0)
 
         text1 = form.data2.data
+        text1 = text1.strip()
         print(text1)
+
 
         val = make_meme_from(id,text0,text1,)
         print(val)
