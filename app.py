@@ -96,4 +96,4 @@ def edit_meme(id):
 
 
 
-app.run(debug=True)
+app.run(debug=False)
