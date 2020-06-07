@@ -1,0 +1,25 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container mx-auto px-4">
+
+
+<div class="flex flex-col text-center w-full mb-20">
+  <br>
+  <h3 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" >Aww! You just made a meme, Download to see it!</h3>
+  <img class="w-full" style="  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%; height:30%;" src="{{url_for('static', filename = 'download.jpg') }}" alt="MEME">
+<br>
+<br>
+<button class="btn"><i class="fa fa-download"></i><a href="{{url_for('static', filename = picture ) }}" download="{{  picture  }}">Download</a></button>
+
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <title></title>
+<style media="screen">
+.btn {
+  background-color: #213e52;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+  #linka:hover {
+
+    border-bottom: 2px solid #81d8d0;
+
+    transition: 0.2s;
+    transition-timing-function: ease;
+  }
+  .abs{
+
+    max-width: 200px;
+    max-height: 200px;
+
+  }
+ #yu{
+   color:#98dce8;
+   font-size: 16px;
+   font-family: monospace;
+
+ }
+  #linka {
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+
+  }
+
+  #h1tag:hover{
+    border-bottom: 2px solid black;
+
+    transition: 0.2s;
+    transition-timing-function: ease;
+
+  }
+
+</style>
+  </head>
+  <body>
+
+    <header class="text-gray-500 bg-gray-900 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+
+    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+
+
+
+      <span class="ml-3 text-xl"> <a id="linka"href="/">served-memes</a></span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+
+    </nav>
+    <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"> <a id="yu" href="https://rohitsaha.netlify.app/"> DEV</a>
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+
+
+{% block content %}
+
+{% endblock %}
+
+
+  </body>
+</html>
